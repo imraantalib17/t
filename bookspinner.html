@@ -37,25 +37,25 @@
 
         @keyframes spin {
             0% {
-                transform: rotateY(0deg);
+                transform: rotateY(0deg) rotateX(0deg);
             }
             16.67% {
-                transform: rotateY(-90deg);
+                transform: rotateY(90deg) rotateX(0deg);
             }
             33.33% {
-                transform: rotateY(-180deg);
+                transform: rotateY(180deg) rotateX(0deg);
             }
             50% {
-                transform: rotateY(-180deg) rotateX(90deg);
+                transform: rotateY(270deg) rotateX(0deg);
             }
             66.67% {
-                transform: rotateY(90deg);
+                transform: rotateY(0deg) rotateX(90deg);
             }
             83.33% {
-                transform: rotateY(0deg) rotateX(-90deg);
+                transform: rotateY(0deg) rotateX(270deg);
             }
             100% {
-                transform: rotateY(0deg);
+                transform: rotateY(0deg) rotateX(0deg);
             }
         }
 
@@ -79,12 +79,12 @@
             transform: translateZ(50px);
         }
 
-        .left {
+        .right {
             background: #FF7F00;
             width: 100px;
-            transform: rotateY(-90deg) translateZ(50px);
+            transform: rotateY(90deg) translateZ(50px);
             position: absolute;
-            left: 0;
+            right: 0;
             height: 100%;
         }
 
@@ -93,22 +93,22 @@
             transform: rotateY(180deg) translateZ(50px);
         }
 
-        .top {
+        .left {
             background: #00AA00;
+            width: 100px;
+            transform: rotateY(-90deg) translateZ(50px);
+            position: absolute;
+            left: 0;
+            height: 100%;
+        }
+
+        .top {
+            background: #0000FF;
             height: 100px;
             transform: rotateX(90deg) translateZ(50px);
             position: absolute;
             top: 0;
             width: 100%;
-        }
-
-        .right {
-            background: #0000FF;
-            width: 100px;
-            transform: rotateY(90deg) translateZ(50px);
-            position: absolute;
-            right: 0;
-            height: 100%;
         }
 
         .bottom {
@@ -125,10 +125,10 @@
     <div class="book-spinner">
         <div class="book">
             <div class="book-face front">📖</div>
-            <div class="book-face left">📖</div>
-            <div class="book-face back">📖</div>
-            <div class="book-face top">📖</div>
             <div class="book-face right">📖</div>
+            <div class="book-face back">📖</div>
+            <div class="book-face left">📖</div>
+            <div class="book-face top">📖</div>
             <div class="book-face bottom">📖</div>
         </div>
     </div>
