@@ -37,25 +37,22 @@
 
         @keyframes spin {
             0% {
-                transform: rotateZ(0deg);
+                transform: rotateY(0deg);
             }
             16.67% {
-                transform: rotateZ(90deg);
+                transform: rotateY(90deg);
             }
             33.33% {
-                transform: rotateZ(180deg);
+                transform: rotateY(180deg);
             }
             50% {
-                transform: rotateZ(270deg);
+                transform: rotateY(270deg);
             }
             66.67% {
-                transform: rotateZ(360deg);
-            }
-            83.33% {
-                transform: rotateZ(450deg);
+                transform: rotateY(360deg);
             }
             100% {
-                transform: rotateZ(360deg);
+                transform: rotateY(360deg);
             }
         }
 
@@ -82,7 +79,7 @@
         .right {
             background: #FF7F00;
             width: 100px;
-            transform: rotateZ(90deg) translateZ(50px);
+            transform: rotateY(90deg) translateZ(50px);
             position: absolute;
             right: 0;
             height: 100%;
@@ -90,13 +87,13 @@
 
         .back {
             background: #FFFF00;
-            transform: rotateZ(180deg) translateZ(50px);
+            transform: rotateY(180deg) translateZ(50px);
         }
 
         .left {
             background: #00AA00;
             width: 100px;
-            transform: rotateZ(270deg) translateZ(50px);
+            transform: rotateY(270deg) translateZ(50px);
             position: absolute;
             left: 0;
             height: 100%;
@@ -105,7 +102,7 @@
         .top {
             background: #0000FF;
             height: 100px;
-            transform: rotateZ(360deg) translateZ(50px);
+            transform: rotateX(90deg) translateZ(50px);
             position: absolute;
             top: 0;
             width: 100%;
@@ -114,7 +111,7 @@
         .bottom {
             background: #9400D3;
             height: 100px;
-            transform: rotateZ(450deg) translateZ(50px);
+            transform: rotateX(-90deg) translateZ(50px);
             position: absolute;
             bottom: 0;
             width: 100%;
