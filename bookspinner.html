@@ -32,30 +32,30 @@
             height: 100%;
             position: relative;
             transform-style: preserve-3d;
-            animation: spin 18s infinite linear;
+            animation: spin 12s infinite linear;
         }
 
         @keyframes spin {
             0% {
-                transform: rotateX(0deg) rotateY(0deg);
+                transform: rotateY(0deg);
             }
             16.67% {
-                transform: rotateX(-20deg) rotateY(-90deg);
+                transform: rotateY(-60deg);
             }
             33.33% {
-                transform: rotateX(0deg) rotateY(-180deg);
+                transform: rotateY(-120deg);
             }
             50% {
-                transform: rotateX(20deg) rotateY(-270deg);
+                transform: rotateY(-180deg);
             }
             66.67% {
-                transform: rotateX(0deg) rotateY(-360deg);
+                transform: rotateY(-240deg);
             }
             83.33% {
-                transform: rotateX(-20deg) rotateY(-450deg);
+                transform: rotateY(-300deg);
             }
             100% {
-                transform: rotateX(0deg) rotateY(-540deg);
+                transform: rotateY(-360deg);
             }
         }
 
@@ -79,45 +79,29 @@
             transform: translateZ(50px);
         }
 
-        .right {
+        .face2 {
             background: #FF7F00;
-            width: 100px;
-            transform: rotateY(90deg) translateZ(50px);
-            position: absolute;
-            right: 0;
-            height: 100%;
+            transform: rotateY(60deg) translateZ(50px);
         }
 
-        .back {
+        .face3 {
             background: #FFFF00;
+            transform: rotateY(120deg) translateZ(50px);
+        }
+
+        .face4 {
+            background: #00AA00;
             transform: rotateY(180deg) translateZ(50px);
         }
 
-        .left {
-            background: #00AA00;
-            width: 100px;
-            transform: rotateY(-90deg) translateZ(50px);
-            position: absolute;
-            left: 0;
-            height: 100%;
-        }
-
-        .top {
+        .face5 {
             background: #0000FF;
-            height: 100px;
-            transform: rotateX(90deg) translateZ(50px);
-            position: absolute;
-            top: 0;
-            width: 100%;
+            transform: rotateY(240deg) translateZ(50px);
         }
 
-        .bottom {
+        .face6 {
             background: #9400D3;
-            height: 100px;
-            transform: rotateX(-90deg) translateZ(50px);
-            position: absolute;
-            bottom: 0;
-            width: 100%;
+            transform: rotateY(300deg) translateZ(50px);
         }
     </style>
 </head>
@@ -125,11 +109,11 @@
     <div class="book-spinner">
         <div class="book">
             <div class="book-face front">📖</div>
-            <div class="book-face right">📖</div>
-            <div class="book-face back">📖</div>
-            <div class="book-face left">📖</div>
-            <div class="book-face top">📖</div>
-            <div class="book-face bottom">📖</div>
+            <div class="book-face face2">📖</div>
+            <div class="book-face face3">📖</div>
+            <div class="book-face face4">📖</div>
+            <div class="book-face face5">📖</div>
+            <div class="book-face face6">📖</div>
         </div>
     </div>
 </body>
